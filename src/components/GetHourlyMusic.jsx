@@ -14,7 +14,7 @@ export default function GetHourlyMusic({hourly, music}) {
     fetchHourly()
     fetchMusic()
   },
-    // empty dependency array 👇🏼 to revent endless loops
+    // empty dependency array 👇🏼 to prevent endless loops
     []
   )
   return (

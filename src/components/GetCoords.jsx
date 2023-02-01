@@ -10,6 +10,6 @@ export default function GetCoords() {
 })
 
   return (
-    <div>GetCoords</div>
+    <div></div>
   )
 }
