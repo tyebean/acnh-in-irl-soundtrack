@@ -6,7 +6,6 @@ import HourlyMusic from './pages/HourlyMusic/HourlyMusic';
 function App() {
   return (
     <div className="App">
-
       <Routes>
       <Route path="/" element={<HourlyMusic />} />
       </Routes>
