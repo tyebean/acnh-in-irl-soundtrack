@@ -49,3 +49,16 @@ audio::-webkit-media-controls-time-remaining-display {
 audio::-webkit-media-controls-volume-slider{
   display: none;
 }
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.transparent-bg {
+  background-color: #ffffff40;
+  border-radius: .5vh;
+  margin: 3.0vh;
+  padding: 3.0vh;
+  box-shadow: 1.2vh 1.2vh .2vh .1vh #1b1b1b69;
+}
