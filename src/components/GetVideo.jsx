@@ -5,10 +5,9 @@ export default function GetVideo() {
   console.log(irl_hour)
   return (
     <>
-      < video controls name="media" >
-        {/* // todo: irl_hour will need to be changed based off of weather */}
+      < audio controls loop={true} name="media" >
         <source src={`https://acnhapi.com/v1/hourly/${irl_hour}`} type="audio/mpeg" />
-      </video >
+      </audio >
     </>
   )
 }
