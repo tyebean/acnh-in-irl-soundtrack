@@ -14,8 +14,10 @@ export default function HourlyMusic() {
       <GetHourlyMusic hourly={setHourly} music={setMusic}/>
       <GetCoords />
       <GetVideo />
-      <h1>Hello! The time it is _time_ _date_ and it is it is _degrees_ degrees in your_location.</h1>
-      <h1>We are playing background_music_name_ to reflect hour _hour_ and the _weather_ weather conditions in animal crossing new horizons </h1>
+      <div className='transparent-bg'>
+      <h1>{`Hello! It is  ${Date()} and it is it is _degrees_ degrees in your_location with _weather_sunny_rainy_snowy) weather.`}</h1>
+      <h1>We are playing background_music_name_ to reflect the real life time and weather as it would be in Animal Crossing New Horizons</h1>
+      </div>
     </div>
   )
 }
