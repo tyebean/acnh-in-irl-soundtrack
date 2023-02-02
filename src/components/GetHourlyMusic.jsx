@@ -1,21 +1,21 @@
 import { getHourly, getMusic } from "../services/acnh"
 import { useEffect } from 'react'
 
-export default function GetHourlyMusic({hourly, music}) {
+export default function GetHourlyMusic({setHourlyMusic, setKKMusic}) {
   useEffect(() => {
     const fetchHourly = async () => {
-      const hourly = await getHourly()
-      hourly(hourly.results)
+      const hourlyMusic = await getHourly()
+      setHourlyMusic(hourlyMusic.results)
     }
-    const fetchMusic = async () => {
-      const music = await getMusic()
-      music(music.results)
+    const fetchKKMusic = async () => {
+      const KKmusic = await getMusic()
+      setKKMusic(KKmusic.results)
     }
     fetchHourly()
-    fetchMusic()
+    fetchKKMusic()
   },
     // empty dependency array 👇🏼 to prevent endless loops
-    []
+    [setHourlyMusic, setKKMusic]
   )
   return (
     <>

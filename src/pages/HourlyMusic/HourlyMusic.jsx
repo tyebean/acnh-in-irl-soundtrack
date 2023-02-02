@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import GetHourlyMusic from '../../components/GetHourlyMusic.jsx'
-import GetCoords from '../../components/GetCoords.jsx'
+import GetHourlyMusic from '../../components/GetHourlyMusic.jsx' //props
+// import GetCoords from '../../components/GetCoords.jsx'
 import GetVideo from '../../components/GetVideo.jsx'
 
 export default function HourlyMusic() {
 
-  const [hourly, setHourly] = useState([])
-  const [music, setMusic] = useState([])
-  console.log("hourly:", hourly, "music:", music);
+  const [hourlyMusic, setHourlyMusic] = useState([])
+  const [KKmusic, setKKMusic] = useState([])
+  console.log("hourlyMusic:", hourlyMusic, "KKmusic:", KKmusic);
 
   return (
     <div>
-      <GetHourlyMusic hourly={setHourly} music={setMusic}/>
-      <GetCoords />
+      <GetHourlyMusic setHourlyMusic={setHourlyMusic} setKKmusic={setKKMusic}/>
+      {/* <GetCoords /> */}
       <GetVideo />
       <div className='transparent-bg'>
       <h1>{`Hello! It is  ${Date()} and it is it is _degrees_ degrees in your_location with _weather_sunny_rainy_snowy) weather.`}</h1>
