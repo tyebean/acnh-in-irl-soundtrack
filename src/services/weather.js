@@ -1,8 +1,6 @@
 import { weatherApi } from "./apiConfig";
-// import { lat, long } from "../components/GetCoords.jsx"
 
-
-// If you do not know the grid that correlates to your location, you can use the /points endpoint to retrieve the exact grid endpoint by coordinates
+// note from api: if you do not know the grid that correlates to your location, you can use the /points endpoint to retrieve the exact grid endpoint by coordinates
 // get city, state, and forecasthourly
 // to reach 'points' endpoint, get lat and long values up to the fourth decimal point
 
@@ -17,8 +15,6 @@ export const GetCoords = () => {
         console.log("lat:", lat, "long:", long);
     })
 }
-
-
 
 export const getPoints = async () => {
     const res = await weatherApi.get(`/points/${lat},${long}`)
