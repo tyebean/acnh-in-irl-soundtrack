@@ -1,6 +1,6 @@
 
 
-export default function GetForecastHourly() {
+export default function GetForecastDescription() {
   return (
     <div>GetForecastHourly</div>
   )
